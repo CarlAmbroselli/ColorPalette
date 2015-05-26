@@ -197,7 +197,7 @@ complementColors <- function(baseColor, count) {
 #' @examples
 #' triadicColors("#121314", 5)
 triadicColors <- function(baseColor, count) {
-  return(head(unique(c(generateMonochromaticColors(triadic(baseColor)[1], ceiling(count/3)), generateMonochromaticColors(triadic(baseColor)[2], round(count/3)), generateMonochromaticColors(ceiling(baseColor)[3], ceiling(count/3)))), n=count))
+  return(head(unique(c(generateMonochromaticColors(triadic(baseColor)[1], ceiling(count/3)), generateMonochromaticColors(triadic(baseColor)[2], round(count/3)), generateMonochromaticColors(generateMonochromaticColors(triadic(baseColor)[3], ceiling(count/3)))), n=count))
 }
 
 #' tetradic colors
