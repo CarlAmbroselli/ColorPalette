@@ -1,8 +1,11 @@
 Package: ColorPalette
-Title: Generates color palettes with different methods based on a base color
-Version: 0.0.0.9000
+Title: ColorPalettesGenerator
+Version: 1.0-0
+Date: 2015-05-01
 Authors@R: person("Carl", "Ambroselli", email = "colorpalette@carl-ambroselli.de", role = c("aut", "cre"))
+Author: Carl AMbroselli [aut, cre]
+Maintainer: Carl Ambroselli <colorpalette@carl-ambroselli.de>
 Description: This package provides different methods to generate a color palette based on a specified base color and a number of colors that should be created.
-Depends: R (>= 3.0.2)
+Depends: R (>= 3.0.0)
 License: Free (do whatever you want)
 LazyData: true
